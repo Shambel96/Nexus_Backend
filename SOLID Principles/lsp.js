@@ -4,77 +4,64 @@
 
 //we can replace the father with the child
 
-// Violating LSP
+//Violating LSP
 
-// class Bird {
-//   fly() {
-//     console.log("FLying");
-//   }
+class Bird {
+  fly() {
+    console.log("FLying");
+  }
 
-//   eat() {
-//     console.log("Eating");
-//   }
-// }
-// class Hen extends Bird {
-//   eat() {
-//     console.log("Eating a Worm");
-//   }
-// }
+  eat() {
+    console.log("Eating");
+  }
+}
+class Hen extends Bird {
+  eat() {
+    console.log("Eating a Worm");
+  }
+}
 
+const newHen = new Hen();
+console.log(newHen.eat());
 
-// const newHen = new Hen()
-
-// newHen.fly()
-
+newHen.fly();
 
 class File {
-    write(content) {
-        console.log(`Writing ${content}`);
-    }
-    save(content) {
+  write(content) {
+    console.log(`Writing ${content}`);
+  }
+  save(content) {}
 
-    }
-
-    read(content) {
-        console.log(`Reading ${content}`);
-        
-    }
+  read(content) {
+    console.log(`Reading ${content}`);
+  }
 }
 
 class ReadonlyFile extends File {
-    // this bad
-    // we are breaking the expected outcome of our class
+  // this bad
+  // we are breaking the expected outcome of our class
 }
-
-
 
 // Solution
 class Readable {
-    read() {
-        throw Error("Should be Implemented")
-    }
+  read() {
+    throw Error("Should be Implemented");
+  }
 }
 
-
 class Writable {
-    write() {
-        throw new Error("Should be Implemented")
-    }
+  write() {
+    throw new Error("Should be Implemented");
+  }
 }
 // Savable
 
-
-
 class ReadableFile extends Readable {
-    read() {
-
-    }
+  read() {}
 }
 
 class WritableFile extends Writable {
-    write() {
-
-    }
+  write() {}
 }
 
 // class multippurposeFile extends File{
@@ -84,4 +71,4 @@ class WritableFile extends Writable {
 // class multippurposeFile implements Readable,Writable {
 
 // }
-// 
+//

@@ -33,12 +33,12 @@
 // reportPrinter.printReport(employee);
 // //
 
-// violates SRP 
+// violates SRP
 
 // import React, { useEffect, useState } from 'react';
 
 // const UserProfile = () => {
-//     // State 
+//     // State
 //   const [user, setUser] = useState(null);
 //   const [loading, setLoading] = useState(true);
 //   const [error, setError] = useState('');
@@ -68,7 +68,7 @@
 //   if (loading) return <p>Loading user...</p>;
 //   if (error) return <p>Error: {error}</p>;
 
-// //   UI 
+// //   UI
 //   return (
 //     <div>
 //       <h2>User Profile</h2>

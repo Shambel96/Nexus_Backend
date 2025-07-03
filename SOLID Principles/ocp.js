@@ -1,6 +1,5 @@
 // OCP
-// Classes should be open for extension but closed for
-// modification.
+// Classes should be open for extension but closed for modification.
 // violated OCP
 class Footballer {
   constructor(name, role) {
@@ -8,24 +7,29 @@ class Footballer {
     this.role = role;
   }
 
-  //   case
+  case;
 
-  //   getter and setter part
-  //   getFooballRole() {
-  //     switch (this.role) {
-  //       case "goalkeepe
-  // cr":
-  //       case "forward":
-  //         return `You Forward ROle`;
-  //       case "defender":
-  c;
-  //       case "Midfielder": // add other
-  //         return "You are MidFielder";
-  //       default:
-  //         return "NO ROle";
-  //     }
-  //   }
+  //getter and setter part
+  getFooballRole() {
+    switch (this.role) {
+      case "goalkeeper":
+        return `You have GoalKeeper ROle`;
+
+      case "forward":
+        return `You Forward ROle`;
+
+      case "defender":
+        return `You have defender ROle`;
+
+      case "Midfielder": // add other
+        return "You are MidFielder";
+
+      default:
+        return "NO ROle you Guys";
+    }
+  }
 }
+console.log(`Output`, new Footballer("Nexus", "goalKeeper").getFooballRole());
 
 // Interface
 class Role {
@@ -52,5 +56,15 @@ class Defender extends Role {
     return "Defender";
   }
 }
+
+class forward extends Role {
+  getRole() {
+    // Override method exist from Role class
+    return "Forward";
+  }
+}
+
+const axqi = new forward();
+console.log(axqi.getRole());
 
 //

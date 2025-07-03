@@ -1,36 +1,35 @@
-// High-level classes shouldn’t depend on low-level class-
-// es
+// High-level classes shouldn’t depend on low-level classes
 
-// class SmsService {
-//     send(message) {
-//         console.log("Sending SMS");
-//     }
-// }
-// class NotificationService {
-//   constructor() {
-//     this.emailService = new EmailService();
-//     this.smsService = new SmsService();
-//     // this.whatsappService = new this.whatsappService()
-//   }
+/* class SmsService {
+  send(message) {
+    console.log("Sending SMS");
+  }
+}
+class NotificationService {
+  constructor() {
+    this.emailService = new EmailService();
+    this.smsService = new SmsService();
+    // this.whatsappService = new this.whatsappService()
+  }
 
-//   notifyviaEmail(message) {
-//     this.emailService.send(message);
-//   }
+  notifyviaEmail(message) {
+    this.emailService.send(message);
+  }
 
-//   notifyviaSMS(message) {
-//     this.smsService.send(message);
-//   }
-// }
-
+  notifyviaSMS(message) {
+    this.smsService.send(message);
+  }
+}
+*/
 // Interface / absraction
 class NotificationChannel {
   send(message) {
-    throw new Error("Impelemnt it");
+    throw new Error("Implement it");
   }
 }
+
 class SmsService extends NotificationChannel {
   send(message) {
-    //override
     console.log("Sending SMS");
   }
 }
@@ -46,6 +45,7 @@ class WhatappService extends NotificationChannel {
     console.log("Sending via Whatsapp");
   }
 }
+
 class NotificationService {
   constructor(notificationChannel) {
     this.notification = notificationChannel;
@@ -57,8 +57,7 @@ class NotificationService {
 }
 
 const smsNotifier = new NotificationService(new SmsService());
-// smsNotifier.notify("Hello");
+smsNotifier.notify("Hello"); // Output: Sending SMS
 
 const whatappNotifier = new NotificationService(new WhatappService());
-whatappNotifier.notify("Hello");
-//
+whatappNotifier.notify("Hello"); // Output: Sending via Whatsapp

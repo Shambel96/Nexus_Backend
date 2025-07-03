@@ -1,17 +1,19 @@
-// function timeConsumingTask() {
-//   console.log("Loop Starts"); // 2 6
-//   //   synchronous
-//   for (let i = 0; i < 10000000000; i++) {}
-//   console.log("Loop ends"); // 3 7
-// }
-// function timeConsumingTask2() {
-//   console.log("Timer starts"); // 4
-//   //   asynchronous
-//   setTimeout(function () {
-//     console.log("First timeout completed");
-//   }, 5000); // in millisecond // 5sec 9
-//   console.log("Timer Ends"); // 5
-// }
+console.log("Asynchronous Programming - Async / Await");
+
+function timeConsumingTask() {
+  console.log("Loop Starts"); // 2 6
+  //   synchronous
+  for (let i = 0; i < 10000000000; i++) {}
+  console.log("Loop ends"); // 3 7
+}
+function timeConsumingTask2() {
+  console.log("Timer starts"); // 4
+  //   asynchronous
+  setTimeout(function () {
+    console.log("First timeout completed");
+  }, 5000); // in millisecond // 5sec 9
+  console.log("Timer Ends"); // 5
+}
 
 // console.log("Outside of the function"); // 1
 // timeConsumingTask();
@@ -124,11 +126,11 @@ function vacationPromisewithSetTimeOut() {
 
 let promise = vacationPromisewithSetTimeOut(); // Promise
 // use our promise
-// promise.then(
-//     function fullfillmentHandlerFunction(value) {}, //sucees
-//     function rejectionHandlerFucntion(value) {}
-// )
-// console.log(promise);
+promise.then(
+  function fullfillmentHandlerFunction(value) {}, //sucees
+  function rejectionHandlerFucntion(value) {}
+);
+console.log(promise);
 
 // promise.then(
 //   (successValue) => {

@@ -14,7 +14,7 @@ const fakeuser = {
 
 // Promise
 
-function fetchUserById(id) {
+/* function fetchUserById(id) {
   return new Promise((resolve, reject) => {
     // time consuming task
     // fetching from database
@@ -28,7 +28,7 @@ function fetchUserById(id) {
       }
     }, 3000);
   });
-}
+} */
 
 // let promise = fetchUserById(1);
 
@@ -42,7 +42,7 @@ function fetchUserById(id) {
 //     console.log(failureValue);
 //   }
 // );
-
+/* 
 async function fetchUser() {
   try {
     const successValue = await fetchUserById(1);
@@ -51,5 +51,33 @@ async function fetchUser() {
     console.log(failureValue);
   }
 }
-fetchUser();
+fetchUser(); */
 //
+
+const user = {
+  id: 1,
+  name: "Yoni",
+};
+
+function fetchUserById(id) {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      if (id === user.id) {
+        resolve(user);
+      } else {
+        reject("User not Found");
+      }
+    }, 3000);
+  });
+}
+console.log(fetchUserById(1));
+
+async function fetchUser() {
+  try {
+    const user = await fetchUserById(1);
+    console.log(user);
+  } catch (error) {
+    console.log("USer not Found", error);
+  }
+}
+console.log(fetchUser());

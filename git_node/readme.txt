@@ -41,3 +41,24 @@ git remote
 - a command used to connect our local repo with the remote repo
 git remote <remote name> <branch name>
 - merge conflict will happen merge Conflict how to resolve
+
+How it works?
+- Tree and Hashing (SHA1 Algorithms)
+f086efb555b5a7d2ef1262c9282fcd520dfb5db3 : "file change"
+
+branch 
+- feature/add new UI for Logout
+- bug-fix/fixed some issue
+- to create a new branch
+git pull > before branching
+git checkout -b <branch name>
+- git stash
+- git revert
+- git rebase
+
+Not recommended
+    git rebase --soft HEAD~1
+    git push --force
+-recommended
+git revert <commit hash> // bec7ee8a9d2d90420b68eaadee6dedd7d33ed485
+git push

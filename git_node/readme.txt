@@ -28,3 +28,10 @@ Local Repo
 some Commands
 git config --list
 git init
+- How to take from wa to sa?
+git add <file/folder>
+- How to make actual version?
+git commit -m <message>
+- How to take it to remote area?
+git push <remote name> <branch name> 
+-

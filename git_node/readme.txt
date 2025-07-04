@@ -40,4 +40,4 @@ git log
 git remote
 - a command used to connect our local repo with the remote repo
 git remote <remote name> <branch name>
-- merge Conflict how to resolve
+- merge conflict will happen merge Conflict how to resolve

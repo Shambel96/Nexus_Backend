@@ -34,4 +34,10 @@ git add <file/folder>
 git commit -m <message>
 - How to take it to remote area?
 git push <remote name> <branch name> 
+- to see commit history information
+git log
+- how to discard changes made in the staging area
+git remote
+- a command used to connect our local repo with the remote repo
+git remote <remote name> <branch name>
 -

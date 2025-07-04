@@ -1,0 +1,30 @@
+- linux Commands
+- Window Commands
+- node installation
+- vs code
+- github 
+
+Git and github
+- What is Version Control?
+keeps track history of changes
+Problem
+- Junior might break the code
+- 2 or more person can work on the same file -> Conflict
+- new changes or new feature -> Commit
+
+1. Git - most famous VC
+
+Git it have 3 areas
+- Working area
+where untracked files exist
+git doesn't know anything about this thing
+- staging area
+all files be part certain version
+git does know about it
+Local Repo
+- remote area
+-
+
+some Commands
+git config --list
+git init

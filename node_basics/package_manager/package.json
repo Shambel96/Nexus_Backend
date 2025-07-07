@@ -1,15 +1,14 @@
 {
   "name": "some_project",
   "version": "1.0.0",
-  "description": "It is my personal Project",
+  "description": "my personal project",
   "main": "manager.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "Nati",
+  "author": "Natnael",
   "license": "ISC",
   "dependencies": {
-    "@better-auth/utils": "^0.2.5"
+    "@better-auth/utils": "^0.2.6"
   }
 }

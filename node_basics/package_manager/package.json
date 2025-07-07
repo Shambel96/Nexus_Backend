@@ -1,0 +1,15 @@
+{
+  "name": "some_project",
+  "version": "1.0.0",
+  "description": "It is my personal Project",
+  "main": "manager.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Nati",
+  "license": "ISC",
+  "dependencies": {
+    "@better-auth/utils": "^0.2.5"
+  }
+}

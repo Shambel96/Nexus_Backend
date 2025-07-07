@@ -62,3 +62,8 @@ Not recommended
 -recommended
 git revert <commit hash> // bec7ee8a9d2d90420b68eaadee6dedd7d33ed485
 git push
+
+iohfifah odsofda
+auiuhasfhiosdfio
+jsdfhsfjio sahhosf
+asjjks ashihf

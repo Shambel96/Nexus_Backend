@@ -21,7 +21,7 @@ class NotificationService {
   }
 }
 */
-// Interface / absraction
+// Interface / abstraction
 class NotificationChannel {
   send(message) {
     throw new Error("Implement it");

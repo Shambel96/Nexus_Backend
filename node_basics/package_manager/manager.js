@@ -1,5 +1,6 @@
 // Package manager
 // resolve dependencies, for library install
+// Linux -> sudo apt install <something>
 // control versions
 // Example: npm -> node package manager
 // Example: bun, yarn

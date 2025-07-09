@@ -1,0 +1,78 @@
+43879325167227
+Skip to content
+You said:
+what module exist in node?
+ChatGPT said:
+In Node.js, modules are reusable pieces of code that help you organize functionality into separate files. There are three main categories of modules in Node.js:
+
+🔹 1. Core (Built-in) Modules
+These come bundled with Node.js — you don’t need to install them.
+
+Module	Description
+fs	File system operations (read, write, etc.)
+http	Build HTTP servers and clients
+https	HTTPS support
+url	Parse and manipulate URLs
+path	Work with file and directory paths
+os	Info about the operating system (CPU, memory, etc.)
+crypto	Encryption and decryption
+events	Handle custom events (pub/sub style)
+stream	Handle streaming data (like file uploads)
+buffer	Handle binary data directly
+zlib	Compression (gzip, deflate)
+util	Utility functions like promisify, inherits, etc.
+process	Info about and control over the current Node process
+child_process	Run shell commands or spawn subprocesses
+readline	Interface for reading input from terminal line-by-line
+dns	Perform DNS lookups
+net	Create TCP/IPC servers and clients
+timers	Timing functions like setTimeout, setInterval (though also available globally)
+v8	Access V8 engine internals
+worker_threads	For multithreading
+🔹 2. Third-party Modules
+These are packages from the npm registry. You install them using npm install.
+
+Examples:
+
+express – Web framework
+
+mongoose – MongoDB ODM
+
+axios – HTTP client
+
+lodash – Utility functions
+
+dotenv – Load environment variables
+
+jsonwebtoken – JWT authentication
+
+bcrypt – Hash passwords
+
+🔹 3. User-defined (Custom) Modules
+These are files you write and import using require() or import.
+
+// utils/math.js
+function add(a, b) {
+  return a + b;
+}
+module.exports = { add };
+
+// index.js
+const { add } = require('./utils/math');
+console.log(add(2, 3)); // 5
+📌 Summary
+Category	Example	Usage
+Core	fs, http	Built into Node
+Third-party (npm)	express	Installed with npm install
+Custom	./myModule	Your own modules
+Let me know if you'd like a cheat sheet or code examples for any module!
+
+
+
+
+No file chosenNo file chosen
+ChatGPT can make mistakes. Check important info.
+
+
+
+

@@ -1,0 +1,5 @@
+# Ignore node_modules folder and package-lock.json file (used in Node.js projects)
+node_modules/
+package-lock.json
+/.env
+#

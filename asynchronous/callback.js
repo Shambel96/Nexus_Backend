@@ -16,7 +16,7 @@ console.log(doubledNumbers);
 // map, filter , reduce
 const isEven = (num) => num % 2; //True
 
-const evenNumbers = numbers.filter(isEven);
+const evenNumbers = numbers.filter(isEven); // [2, 4]
 console.log(evenNumbers);
 
 // sort

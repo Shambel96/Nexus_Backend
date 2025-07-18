@@ -1,0 +1,12 @@
+# Ignore the build directory
+Evangadi/
+
+
+#Ignore the node_modules directory
+Telegram_bot/node_modules/
+Telegram_bot/.env
+Telegram_bot/package-lock.json
+Node.js/node_modules/
+rest-api/node_modules/
+rest-api/package-lock.json
+

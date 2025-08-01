@@ -30,3 +30,5 @@ DBMS
         - Document - Row
         - Schema - blueprint our table
 - 
+
+
